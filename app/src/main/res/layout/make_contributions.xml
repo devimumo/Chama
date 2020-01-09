@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.MakeContribution">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/with_balance"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:cardElevation="5dp"
+        android:visibility="gone"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.116"
+        app:layout_constraintWidth_percent="0.98"
+        app:layout_constraintHeight_percent="0.35">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:background="@drawable/cardview_balance_background"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.35"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/balance_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:textSize="15dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="30dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+
+                    android:text="Your monthly contribution arrears is" />
+                <TextView
+                    android:id="@+id/balance_amount"
+                    android:layout_width="wrap_content"
+                    android:paddingHorizontal="6dp"
+                    android:layout_height="0dp"
+                    android:textColor="@color/black"
+
+                    android:textSize="15dp"
+                    android:background="@drawable/edittexts"
+                    android:layout_weight="1.2"
+                    android:paddingBottom="5dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="0 kshs" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/chama"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/due_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:textSize="15dp"
+                        android:paddingLeft="8dp"
+
+                        android:paddingTop="7dp"
+                        android:layout_weight="1"
+                        android:text="Next Contribution Date is" />
+                    <TextView
+                        android:id="@+id/due_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="2dp"
+                        android:layout_marginBottom="4dp"
+android:textColor="@color/black"
+                        android:paddingLeft="8dp"
+
+                        android:layout_gravity="center_vertical"
+                        android:textSize="15dp"
+                        android:gravity="center_vertical"
+                        android:layout_weight="0.1"
+                        android:text="12/2/2020" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/statement_layout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:padding="5dp"
+                android:background="@drawable/contribution_statement_background">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/chama"/>
+                <TextView
+                    android:id="@+id/statement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:paddingLeft="8dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:text="Contribution Statement" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fully_paid"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        android:outlineSpotShadowColor="@color/colorblack"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.116"
+        app:layout_constraintWidth_percent="0.65">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            android:background="@drawable/cardview_background">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:src="@drawable/done"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:text="Fully paid"/>
+
+        </LinearLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <LinearLayout
+        android:id="@+id/make_contributions_progressbar_layout"
+        android:visibility="visible"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintWidth_percent="0.3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            style="?android:attr/progressBarStyle"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Loading data..."/>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_constraintHeight_percent="1">
+
+
+    <TextView
+        android:id="@+id/payed_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text=" 07/01/2020"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        app:layout_constraintWidth_percent="0.42"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/amount_due"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="amount due"
+        android:textColor="@color/misty_blue"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@+id/payed_date"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.2" />
+
+    <TextView
+        android:id="@+id/paid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:text="paid"
+        android:textColor="@color/color_mpesa_deposit"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@+id/amount_due"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.17" />
+
+    <TextView
+        android:id="@+id/bal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="bal"
+        android:textColor="@color/color_mpesa_deposit"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/paid"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.17" />
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="5dp"
+        android:text=" Monthly Contribution \n payment"
+        android:textColor="@color/black"
+app:layout_constraintWidth_percent="0.47"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/payed_date" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/message" />
+</androidx.constraintlayout.widget.ConstraintLayout>

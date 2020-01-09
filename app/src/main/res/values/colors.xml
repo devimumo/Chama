@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorblack">#000000</color>
+    <color name="balance_color">#3690D6</color>
+    <color name="ui_color">#ffffff</color>
+    <color name="back_color">#009688</color>
+
+    <color name="startblue">#7980B3</color>
+    <color name="orange">#E91E63</color>
+
+    <color name="endblue">#1E2969</color>
+    <color name="color_balance">#1269AF</color>
+    <color name="color_mpesa_deposit">#11EC1A</color>
+    <color name="misty_blue">#0292B7</color>
+
+
+    <color name="ui__color">#9E3C3C</color>
+
+
+
+    <color name="blueDodger">#1E90FF</color>
+    <color name="ghostWhite">#F8F8FF</color>
+    <color name="black">#000</color>
+    <color name="texts">#F0FFFF</color>
+</resources>
