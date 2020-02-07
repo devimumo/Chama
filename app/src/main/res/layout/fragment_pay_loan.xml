@@ -8,7 +8,7 @@
 
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/with_balance"
+        android:id="@+id/loan_balance_layout"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:cardElevation="5dp"
@@ -130,12 +130,12 @@
         android:id="@+id/pay"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:visibility="gone"
+        android:visibility="visible"
         app:cardCornerRadius="10dp"
         app:cardElevation="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintHeight_percent="0.31"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.46"
@@ -146,7 +146,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:padding="5dp">
+            android:padding="5dp"
+            android:background="@drawable/cardview_balance_background">
 
 
 
@@ -161,25 +162,29 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="1"
+                    android:layout_weight="0.45"
                     android:gravity="center"
                     android:orientation="horizontal">
 
                     <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:textSize="20dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="17.5dp"
+                        android:textColor="@color/black"
+
                         android:paddingLeft="8dp"
-                        android:paddingTop="7dp"
+                        android:paddingTop="3dp"
                         android:gravity="center"
                         android:text="+254" />
                     <TextView
-                        android:id="@+id/phone_number"
+                        android:id="@+id/phone_numbersss"
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:textSize="20dp"
-                        android:paddingLeft="8dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="17.5dp"
+                        android:paddingLeft="4dp"
                         android:paddingTop="7dp"
+                        android:textColor="@color/black"
+                        android:paddingBottom="4dp"
                         android:gravity="center"
                         android:text="7********" />
 
@@ -193,14 +198,15 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="0.67"
+                    android:layout_weight="0.37"
                     android:gravity="center">
 
                     <EditText
                         android:id="@+id/loan_payment_amount"
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:gravity="center"
+                        android:textColor="@color/black"
                         android:textSize="20dp"
                         android:inputType="number"
 android:hint="100"/>
@@ -210,32 +216,35 @@ android:hint="100"/>
 
 
             </LinearLayout>
-
             <LinearLayout
-                android:id="@+id/pay_loan_submission"
+                android:id="@+id/dde"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="0.7"
-                android:gravity="center"
-                android:orientation="horizontal"
-                android:background="@drawable/cardview_background">
-
-
+                android:background="@drawable/button_background">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:text="Pay"
+                    android:layout_gravity="center"
                     android:gravity="center"
-                    android:text="Pay Loan"
-                    android:textSize="25dp"
-                    />
-
+                    android:textSize="24dp"
+                    android:textStyle="bold"/>
             </LinearLayout>
+
+
+
+
+
+
 
 
         </LinearLayout>
 
 
     </androidx.cardview.widget.CardView>
+
+
 
     <Button
         android:id="@+id/pay_loan"

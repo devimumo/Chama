@@ -1,8 +1,10 @@
 package com.example.chama
 
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager.widget.ViewPager
+import com.example.chama.Fragments.PendingLoanData
 import com.example.chama.ui.main.SectionsPagerAdapter_Loans
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
@@ -24,5 +26,9 @@ class Loans : AppCompatActivity() {
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
         }
+    }
+
+    fun ddd(view: View) {
+        PendingLoanData()
     }
 }

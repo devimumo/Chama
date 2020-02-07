@@ -7,46 +7,32 @@
     tools:context=".DashBoard">
 
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="#7D4ADB"
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight_percent="0.1"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.004"
-        app:layout_constraintWidth_percent="1" />
-
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fillViewport="true"
         android:background="#F5F3F3"
+        android:fillViewport="true"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.457">
+
         <GridLayout
 
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:columnCount="2"
-            android:layout_centerVertical="true"
             android:layout_centerHorizontal="true"
-
+            android:layout_centerVertical="true"
             android:layout_marginLeft="40dp"
-            android:useDefaultMargins="true"
+
             android:background="#F5F3F3"
+            android:columnCount="2"
+            android:paddingHorizontal="20dp"
             android:paddingVertical="10dp"
-           android:paddingHorizontal="20dp">
+            android:useDefaultMargins="true">
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/transactions"
@@ -266,8 +252,8 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_gravity="center"
-                android:onClick="Card_click"
                 android:layout_marginTop="20dp"
+                android:onClick="Card_click"
 
                 app:cardCornerRadius="10dp"
                 app:cardElevation="2dp">

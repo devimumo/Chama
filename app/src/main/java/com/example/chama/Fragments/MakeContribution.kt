@@ -86,15 +86,6 @@ private  fun check_balance( view: View)
 
 
 
-
-
-
-
-
-
-
-
-
     },Response.ErrorListener {
 
         val error_handler=Volley_ErrorListener_Handler()

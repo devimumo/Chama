@@ -31,12 +31,12 @@ class SectionsPagerAdapter_Loans(private val context: Context, fm: FragmentManag
         {
             0->
             {
-                return GetLoansData()
+                return PayLoan ()
             }
               1->
               {
 
-                  return PayLoan()
+                  return GetLoansData()
               }
 
               else->return GetLoansData()

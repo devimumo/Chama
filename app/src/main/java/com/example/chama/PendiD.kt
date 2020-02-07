@@ -1,43 +1,25 @@
-package com.example.chama.Fragments
-
+package com.example.chama
 
 import android.content.Context
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import androidx.fragment.app.Fragment
-import com.example.chama.R
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.fragment_pending_loan_data.*
 
-/**
- * A simple [Fragment] subclass.
- */
-class PendingLoanData : Fragment() {
+class PendiD : AppCompatActivity() {
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_pendi_d)
 
+        val view=        setContentView(R.layout.activity_pendi_d)
 
-val view=         inflater.inflate(R.layout.fragment_pending_loan_data, container, false)
+        shared_pred_data(this)
 
-
-
-
-
-      shared_pred_data(view)
-
-
-    return  view
     }
-
-    fun shared_pred_data(view: View)
+    fun shared_pred_data(context: Context)
     {
         val MyPreferences = "mypref"
-        val sharedPreferences = view?.context?.getSharedPreferences(MyPreferences, Context.MODE_PRIVATE)
+        val sharedPreferences = context.getSharedPreferences(MyPreferences, Context.MODE_PRIVATE)
         // String session_id= sharedPreferences.getString("sessions_ids","");
 
 
@@ -64,6 +46,4 @@ val view=         inflater.inflate(R.layout.fragment_pending_loan_data, containe
 
 
     }
-
-
 }

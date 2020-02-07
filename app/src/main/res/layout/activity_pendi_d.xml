@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".PendiD"
+    android:background="#122ED5">
+
+<!-- TODO: Update blank fragment layout -->
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    app:layout_constraintHeight_percent="0.05"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:layout_editor_absoluteX="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25dp"
+            android:text="Loan id"
+            android:textColor="@color/black"
+            android:textSize="17.5dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/loan_id_pending_data_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Loan id"
+            android:textColor="@color/black"
+
+            android:textSize="17.5dp"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="3.5dp"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25dp"
+            android:text="Loan Approval id"
+            android:textColor="@color/black"
+            android:textSize="17.5dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/loan_approval_id_pending_data_layout"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Loan id"
+            android:textColor="@color/black"
+
+            android:textSize="17.5dp"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="3.5dp"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25dp"
+            android:text="Disbursed amount"
+            android:textColor="@color/black"
+            android:textSize="17.5dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/disbursed_amount_pending_data_layout"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Loan amount"
+            android:textColor="@color/black"
+
+            android:textSize="17.5dp"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="3.5dp"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25dp"
+            android:text="Transaction id"
+            android:textColor="@color/black"
+            android:textSize="17.5dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/loan_disbursement_transaction_id_pending_data_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0fyuudb"
+            android:textColor="@color/black"
+
+            android:textSize="17.5dp"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="3.5dp"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25dp"
+            android:text="Disbursement method"
+            android:textColor="@color/black"
+            android:textSize="17.5dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/disbursement_method_pending_data_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Mpesa "
+            android:textColor="@color/black"
+
+            android:textSize="17.5dp"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="3.5dp"
+
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25dp"
+            android:text="Disbursement date"
+            android:textColor="@color/black"
+            android:textSize="17.5dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/disbursement_date_pending_data_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Loan id"
+            android:textColor="@color/black"
+
+            android:textSize="17.5dp"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="3.5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25dp"
+            android:text="Due date"
+            android:textColor="@color/black"
+            android:textSize="17.5dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/loan_due_date_pending_data_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Loan id"
+            android:textColor="@color/black"
+
+            android:textSize="17.5dp"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="3.5dp"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25dp"
+            android:text="loan balance"
+            android:textColor="@color/black"
+            android:textSize="17.5dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/loan_balance_pending_data_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Loan id"
+            android:textColor="@color/black"
+
+            android:textSize="17.5dp"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="3.5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25dp"
+            android:text="loan description"
+            android:textColor="@color/black"
+            android:textSize="17.5dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/loan_description_pending_data_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Loan id"
+            android:textColor="@color/black"
+
+            android:textSize="17.5dp"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

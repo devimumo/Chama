@@ -35,7 +35,7 @@
                 android:layout_weight="1"/>
 
             <TextView
-                android:id="@+id/loan_id"
+                android:id="@+id/loan_id_pending_data_layout"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="Loan id"
@@ -64,7 +64,7 @@
                 android:layout_weight="1"/>
 
             <TextView
-                android:id="@+id/loan_approval_id"
+                android:id="@+id/loan_approval_id_pending_data_layout"
 
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -94,7 +94,7 @@
                 android:layout_weight="1"/>
 
             <TextView
-                android:id="@+id/disbursed_amount"
+                android:id="@+id/disbursed_amount_pending_data_layout"
 
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -124,7 +124,7 @@
                 android:layout_weight="1"/>
 
             <TextView
-                android:id="@+id/loan_disbursement_transaction_id"
+                android:id="@+id/loan_disbursement_transaction_id_pending_data_layout"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="0fyuudb"
@@ -153,7 +153,7 @@
                 android:layout_weight="1"/>
 
             <TextView
-                android:id="@+id/disbursement_method"
+                android:id="@+id/disbursement_method_pending_data_layout"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="Mpesa "
@@ -183,7 +183,7 @@
                 android:layout_weight="1"/>
 
             <TextView
-                android:id="@+id/disbursement_date"
+                android:id="@+id/disbursement_date_pending_data_layout"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="Loan id"
@@ -211,7 +211,7 @@
                 android:layout_weight="1"/>
 
             <TextView
-                android:id="@+id/loan_due_date"
+                android:id="@+id/loan_due_date_pending_data_layout"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="Loan id"
@@ -240,7 +240,7 @@
                 android:layout_weight="1"/>
 
             <TextView
-                android:id="@+id/loan_balance"
+                android:id="@+id/loan_balance_pending_data_layout"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="Loan id"
@@ -268,7 +268,7 @@
                 android:layout_weight="1"/>
 
             <TextView
-                android:id="@+id/loan_description"
+                android:id="@+id/loan_description_pending_data_layout"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="Loan id"
