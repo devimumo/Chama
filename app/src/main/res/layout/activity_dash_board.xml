@@ -10,7 +10,7 @@
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#F5F3F3"
+        android:background="#ffffff"
         android:fillViewport="true"
 
         app:layout_constraintBottom_toBottomOf="parent"
@@ -28,7 +28,7 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="40dp"
 
-            android:background="#F5F3F3"
+            android:background="#ffffff"
             android:columnCount="2"
             android:paddingHorizontal="20dp"
             android:paddingVertical="10dp"
@@ -45,7 +45,7 @@
                 android:clickable="true"
                 android:onClick="Card_click"
                 app:cardCornerRadius="10dp"
-                app:cardElevation="2dp">
+                app:cardElevation="4dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -86,7 +86,7 @@
                 android:layout_marginTop="20dp"
                 android:onClick="Card_click"
                 app:cardCornerRadius="10dp"
-                app:cardElevation="2dp">
+                app:cardElevation="4dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -130,7 +130,7 @@
                 android:layout_marginTop="20dp"
                 android:onClick="Card_click"
                 app:cardCornerRadius="10dp"
-                app:cardElevation="2dp">
+                app:cardElevation="4dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -170,7 +170,7 @@
                 android:layout_marginTop="20dp"
                 android:onClick="Card_click"
                 app:cardCornerRadius="10dp"
-                app:cardElevation="2dp">
+                app:cardElevation="4dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -214,7 +214,7 @@
 
                 android:onClick="Card_click"
                 app:cardCornerRadius="10dp"
-                app:cardElevation="2dp">
+                app:cardElevation="4dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -256,7 +256,7 @@
                 android:onClick="Card_click"
 
                 app:cardCornerRadius="10dp"
-                app:cardElevation="2dp">
+                app:cardElevation="4dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"

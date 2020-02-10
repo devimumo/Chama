@@ -13,7 +13,7 @@
         android:id="@+id/with_balance"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:visibility="visible"
+        android:visibility="gone"
         app:cardCornerRadius="10dp"
         app:cardElevation="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -262,7 +262,7 @@
         android:id="@+id/payment_promnt"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:visibility="visible"
+        android:visibility="gone"
         android:outlineSpotShadowColor="#000"
         app:cardCornerRadius="10dp"
         app:cardElevation="3dp"
@@ -272,7 +272,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/with_balance"
         app:layout_constraintVertical_bias="0.204"
-        app:layout_constraintHeight_percent="0.37"
+        app:layout_constraintHeight_percent="0.47"
         app:layout_constraintWidth_percent="0.64" >
 
        <LinearLayout
@@ -285,7 +285,7 @@
            <LinearLayout
                android:layout_width="match_parent"
                android:layout_height="0dp"
-               android:layout_weight="1"
+               android:layout_weight="1.5"
                android:orientation="horizontal"
                android:weightSum="4">
 
@@ -294,30 +294,18 @@
                    android:layout_height="match_parent"
                    android:layout_weight="3">
 
-                   <TextView
-                       android:id="@+id/my_number_textview"
-                       android:layout_width="wrap_content"
-                       android:layout_height="match_parent"
-                       android:layout_alignParentRight="true"
 
-                       android:layout_marginRight="0dp"
-                       android:textSize="15dp"
-                       android:layout_marginEnd="12dp"
-                       android:gravity="center_vertical"
 
-                       android:visibility="visible"
-                       android:text="254713836954"/>
-
-                   <TextView
+                   <EditText
                        android:id="@+id/my_number_edittext"
                        android:layout_width="wrap_content"
                        android:layout_height="match_parent"
                        android:gravity="center_vertical"
-
                        android:layout_alignParentRight="true"
                        android:layout_alignParentBottom="true"
                        android:layout_marginEnd="12dp"
                        android:layout_marginBottom="0dp"
+                       android:visibility="visible"
                        android:hint="254713836954"
                        android:textColor="@color/black"
                        android:textSize="15dp" />
@@ -325,19 +313,12 @@
 
                </RelativeLayout>
 
-               <ImageView
-                   android:layout_width="0dp"
-                   android:layout_height="match_parent"
-                   android:layout_weight="1"
-                   android:src="@drawable/ic_edit_black_24dp"/>
-
            </LinearLayout>
            <LinearLayout
                android:layout_width="match_parent"
                android:layout_height="0dp"
-
-               android:layout_marginTop="25dp"
-               android:layout_weight="1"
+               android:layout_marginTop="15dp"
+               android:layout_weight="1.5"
                android:orientation="horizontal"
                android:weightSum="4">
 
@@ -346,31 +327,20 @@
                    android:layout_height="match_parent"
                    android:layout_weight="3">
 
-                   <TextView
-                       android:id="@+id/my_amount_textview"
-                       android:layout_width="wrap_content"
-                       android:textSize="15dp"
-                        android:layout_alignParentRight="true"
-                       android:layout_alignParentBottom="true"
-                       android:layout_marginEnd="30dp"
-                       android:layout_marginBottom="0dp"
-                       android:gravity="center_vertical"
 
-                       android:layout_height="match_parent"
-                       android:visibility="visible"
-                       android:text="100.00"/>
 
-                   <TextView
+                   <EditText
                        android:id="@+id/my_amount_edittext"
                        android:layout_width="wrap_content"
                        android:layout_height="match_parent"
+                       android:visibility="visible"
                        android:gravity="center_vertical"
                        android:layout_alignParentRight="true"
                        android:layout_alignParentBottom="true"
                        android:layout_marginEnd="30dp"
                        android:layout_marginBottom="0dp"
-                       android:textSize="15dp"
 
+                       android:textSize="15dp"
                        android:textColor="@color/black"
                        android:hint="100.00"/>
 
@@ -378,22 +348,24 @@
 
                </RelativeLayout>
 
-               <ImageView
-                   android:layout_width="0dp"
-                   android:layout_height="match_parent"
-                   android:layout_weight="1"
-                   android:src="@drawable/ic_edit_black_24dp"/>
-
            </LinearLayout>
 
            <Button
+               android:id="@+id/pay_with_mpesa"
                android:layout_width="wrap_content"
                android:layout_height="0dp"
                android:paddingHorizontal="18dp"
                android:background="@drawable/cardview_background"
-               android:layout_marginTop="23dp"
-               android:layout_weight="1.65"
+               android:layout_marginTop="13dp"
+               android:layout_weight="1.0"
                android:text="Pay with Mpesa"/>
+
+           <ProgressBar
+               android:id="@+id/pay_contribution_progress_bar"
+               style="?android:attr/progressBarStyle"
+               android:visibility="gone"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
        </LinearLayout>
 
 

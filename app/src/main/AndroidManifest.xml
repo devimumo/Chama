@@ -9,10 +9,10 @@
     <application
         android:allowBackup="true"
         android:hardwareAccelerated="true"
-        android:icon="@mipmap/chama"
+        android:icon="@mipmap/download__"
         android:label="@string/app_name"
         android:largeHeap="true"
-        android:roundIcon="@mipmap/chama"
+        android:roundIcon="@mipmap/download__"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
