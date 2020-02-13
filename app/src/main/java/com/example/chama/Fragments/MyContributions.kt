@@ -79,7 +79,6 @@ class MyContributions : Fragment() {
                 contributions_data.getInt("paid"),
                 contributions_data.getInt("balance"),
                 contributions_data.getString("message")
-
             )
 
             statement_data.add(contribution_dataa)

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragments.MyContributions">
+    tools:context="com.example.chama.Fragments.GetLoansData">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -88,7 +88,7 @@
             android:layout_height="match_parent"
             android:layout_weight="0.4"
             android:gravity="center_horizontal"
-            android:text="amount due"
+            android:text="Transaction \n id"
             android:textColor="@color/black" />
 
         <TextView

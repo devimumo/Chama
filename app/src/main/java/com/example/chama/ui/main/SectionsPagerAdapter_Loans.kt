@@ -51,6 +51,6 @@ class SectionsPagerAdapter_Loans(private val context: Context, fm: FragmentManag
 
     override fun getCount(): Int {
         // Show 2 total pages.
-        return 3
+        return 2
     }
 }

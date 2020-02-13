@@ -47,7 +47,12 @@ class MakeContribution : Fragment() {
 
 check_balance(view)
 
+       view.my_number_edittext.setOnTouchListener(View.OnTouchListener { view, event ->
 
+
+//Toast.makeText(view.context,"nnnn",Toast.LENGTH_LONG).show()
+
+            return@OnTouchListener false       })
 
 
         view.pay_with_mpesa.setOnClickListener {
@@ -56,6 +61,8 @@ check_balance(view)
         }
 
         return view
+
+
     }
 
 
@@ -116,6 +123,8 @@ check_balance(view)
 
                 with_balance.visibility=View.VISIBLE
                 payment_promnt.visibility=View.VISIBLE
+
+
 
                 make_contributions_progressbar_layout.visibility=View.GONE
 
