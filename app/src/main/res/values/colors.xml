@@ -20,9 +20,10 @@
     <color name="ui__color">#9E3C3C</color>
 
 
-
+<color name="view_black">#22000000</color>
     <color name="blueDodger">#1E90FF</color>
     <color name="ghostWhite">#F8F8FF</color>
     <color name="black">#000</color>
     <color name="texts">#F0FFFF</color>
+    <color name="request_loan">#0FF319</color>
 </resources>

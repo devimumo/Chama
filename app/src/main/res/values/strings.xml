@@ -9,12 +9,14 @@
     <string name="loans_tab_text_3">Mini Statement </string>
     <string name="loans_tab_text_2">Request Loan </string>
     <string name="loans_tab_text_1">Pay Loan </string>
-
-
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_loans">Loans</string>
     <string name="onClick">onClick</string>
+    <string name="loan_limit">Loan Limit :</string>
+    <string name="kshs_2300">kshs. 2300</string>
+    <string name="request_loan">Request Loan</string>
+    <string name="amount">Amount</string>
+    <string name="confirm">Confirm</string>
 
 
 </resources>

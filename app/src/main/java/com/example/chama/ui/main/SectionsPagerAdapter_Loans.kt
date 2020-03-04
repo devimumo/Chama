@@ -6,6 +6,7 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import com.example.chama.Fragments.GetLoansData
 import com.example.chama.Fragments.PayLoan
+import com.example.chama.Fragments.RequestLoan
 import com.example.chama.R
 
 private val TAB_TITLES = arrayOf(
@@ -36,9 +37,12 @@ class SectionsPagerAdapter_Loans(private val context: Context, fm: FragmentManag
               1->
               {
 
-                  return GetLoansData()
+                  return RequestLoan()
               }
+2->{
+    return GetLoansData()
 
+}
               else->return GetLoansData()
         }
 
@@ -51,6 +55,6 @@ class SectionsPagerAdapter_Loans(private val context: Context, fm: FragmentManag
 
     override fun getCount(): Int {
         // Show 2 total pages.
-        return 2
+        return 3
     }
 }
