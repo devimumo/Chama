@@ -176,8 +176,7 @@ val server_response=jsonObject.getString("server_response")
         requestQueue.add(stringRequest)
     }
 
-    fun pay_loan_from_mpesa(phone_number: String,amount: String)
-    {
+    fun pay_loan_from_mpesa(phone_number: String,amount: String) {
 
 
         val c=this.context
@@ -309,8 +308,7 @@ val server_response=jsonObject.getString("server_response")
 
     }
 
-    private fun alert_dialog(message:String,phone_number:String,amount:String)
-    {
+    private fun alert_dialog(message:String,phone_number:String,amount:String) {
         val builder = AlertDialog.Builder(this.context)
         builder.setMessage(message)
             .setPositiveButton("Confirm",

@@ -16,7 +16,7 @@
             android:id="@+id/loan_balance_layout"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:visibility="visible"
+            android:visibility="gone"
             app:cardCornerRadius="10dp"
             app:cardElevation="5dp"
             app:layout_constraintHeight_max="150dp"
